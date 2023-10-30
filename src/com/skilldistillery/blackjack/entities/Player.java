@@ -1,5 +1,13 @@
 package com.skilldistillery.blackjack.entities;
 
 public class Player {
-	protected Hand hand;
+	private BlackjackHand hand;
+	
+	public Player(){
+		hand = new BlackjackHand();
+	}
+	public BlackjackHand getHand() {
+		return hand;
+	}
+	
 }
